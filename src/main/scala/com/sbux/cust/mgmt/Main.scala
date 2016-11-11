@@ -1,13 +1,14 @@
-package com.sbux.quiz.mgmt
+package com.sbux.cust.mgmt
 
-import scala.concurrent.duration._
-import akka.actor._
+import akka.actor.ActorSystem
 import akka.http.scaladsl.Http
 import akka.stream.ActorMaterializer
 import akka.util.Timeout
-
 import com.typesafe.config.ConfigFactory
 
+/**
+  * Created by inbanerj on 11/11/16.
+  */
 object Main extends App with RestInterface {
   val config = ConfigFactory.load()
   val host = config.getString("http.host")
@@ -18,7 +19,7 @@ object Main extends App with RestInterface {
 
 
   implicit val executionContext = system.dispatcher
-  implicit val timeout = Timeout(10 seconds)
+  //implicit val timeout = Timeout(10 seconds)
 
   val api = routes
 

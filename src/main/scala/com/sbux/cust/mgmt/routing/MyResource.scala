@@ -1,4 +1,4 @@
-package com.sbux.quiz.mgmt.routing
+package com.sbux.cust.mgmt.routing
 
 import akka.http.scaladsl.marshalling.{ToResponseMarshaller, ToResponseMarshallable}
 
@@ -6,7 +6,7 @@ import scala.concurrent.{ExecutionContext, Future}
 import akka.http.scaladsl.model.headers.Location
 import akka.http.scaladsl.server.{Directives, Route}
 
-import com.sbux.quiz.mgmt.serializers.JsonSupport
+import com.sbux.cust.mgmt.serializers.JsonSupport
 
 trait MyResource extends Directives with JsonSupport {
 

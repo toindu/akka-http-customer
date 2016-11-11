@@ -1,4 +1,4 @@
-package com.sbux.quiz.mgmt.serializers
+package com.sbux.cust.mgmt.serializers
 
 import java.text.SimpleDateFormat
 

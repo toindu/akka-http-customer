@@ -1,8 +1,9 @@
-package com.sbux.quiz.mgmt
+package com.sbux.cust.mgmt
 
 import akka.http.scaladsl.server.Route
-import com.sbux.quiz.mgmt.resources.CustomerResource
-import com.sbux.quiz.mgmt.services.CustomerService
+import com.sbux.cust.mgmt.resources.CustomerResource
+import com.sbux.cust.mgmt.services.CustomerService
+
 
 import scala.concurrent.ExecutionContext
 

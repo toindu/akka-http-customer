@@ -1,7 +1,7 @@
-package com.sbux.quiz.mgmt.services
+package com.sbux.cust.mgmt.services
 
-import com.sbux.quiz.mgmt.entities.{Customer, CustomerUpdate}
-import com.sbux.quiz.mgmt.resources.CassandraResource
+import com.sbux.cust.mgmt.entities.{Customer, CustomerUpdate}
+import com.sbux.cust.mgmt.resources.CassandraResource
 
 import scala.concurrent.{ExecutionContext, Future}
 

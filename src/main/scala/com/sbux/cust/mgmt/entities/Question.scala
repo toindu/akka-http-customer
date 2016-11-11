@@ -1,3 +1,3 @@
-package com.sbux.quiz.mgmt.entities
+package com.sbux.cust.mgmt.entities
 
 case class Question(id: String, title: String, text: String)

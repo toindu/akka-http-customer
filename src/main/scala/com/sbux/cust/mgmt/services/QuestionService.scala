@@ -1,6 +1,6 @@
-package com.sbux.quiz.mgmt.services
+package com.sbux.cust.mgmt.services
 
-import com.sbux.quiz.mgmt.entities.{Question, QuestionUpdate}
+import com.sbux.cust.mgmt.entities.{Question, QuestionUpdate}
 
 import scala.concurrent.{ExecutionContext, Future}
 

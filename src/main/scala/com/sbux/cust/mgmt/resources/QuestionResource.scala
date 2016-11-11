@@ -1,10 +1,10 @@
-package com.sbux.quiz.mgmt.resources
+package com.sbux.cust.mgmt.resources
 
 import akka.http.scaladsl.server.Route
 
-import com.sbux.quiz.mgmt.entities.{Question, QuestionUpdate}
-import com.sbux.quiz.mgmt.routing.MyResource
-import com.sbux.quiz.mgmt.services.QuestionService
+import com.sbux.cust.mgmt.entities.{Question, QuestionUpdate}
+import com.sbux.cust.mgmt.routing.MyResource
+import com.sbux.cust.mgmt.services.QuestionService
 
 trait QuestionResource extends MyResource {
 

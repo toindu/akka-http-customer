@@ -1,4 +1,4 @@
-package com.sbux.quiz.mgmt.resources
+package com.sbux.cust.mgmt.resources
 
 
 import java.io.{File, FileInputStream, InputStream}
@@ -8,7 +8,7 @@ import javax.net.ssl.{SSLContext, TrustManagerFactory}
 import com.datastax.driver.core.{Cluster, NettySSLOptions}
 import com.datastax.driver.core.querybuilder.QueryBuilder
 import com.datastax.driver.core.querybuilder.QueryBuilder._
-import com.sbux.quiz.mgmt.entities.Customer
+import com.sbux.cust.mgmt.entities.Customer
 import io.netty.handler.ssl.{SslContextBuilder, SslProvider}
 //import sun.security.ssl.ProtocolVersion
 import com.datastax.driver.core.Cluster

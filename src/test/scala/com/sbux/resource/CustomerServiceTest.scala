@@ -7,8 +7,8 @@ import akka.http.scaladsl.model.{HttpEntity, HttpMethods, HttpRequest, MediaType
 import akka.http.scaladsl.testkit.ScalatestRouteTest
 import akka.stream.ActorMaterializer
 import akka.util.{ByteString, Timeout}
-import com.sbux.quiz.mgmt.RestInterface
-import com.sbux.quiz.mgmt.resources.CustomerResource
+import com.sbux.cust.mgmt.RestInterface
+import com.sbux.cust.mgmt.resources.CustomerResource
 import com.typesafe.config.ConfigFactory
 import org.scalatest.{Matchers, WordSpec}
 

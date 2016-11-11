@@ -87,7 +87,7 @@ Request:
 ```
 curl -v -H "Content-Type: application/json" \
 	 -X PUT http://localhost:5000/customers/test \
-	 -d '{"text":"Another text"}'
+	 -d '{"name":"Another text"}'
 ```
 Response if the question has been updated:
 ```

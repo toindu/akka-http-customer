@@ -1,7 +1,7 @@
 package com.sbux.resource
 
-import com.sbux.quiz.mgmt.entities.Customer
-import com.sbux.quiz.mgmt.resources.CassandraResource
+import com.sbux.cust.mgmt.entities.Customer
+import com.sbux.cust.mgmt.resources.CassandraResource
 import org.scalatest.{FlatSpec, Matchers}
 
 import scala.collection.mutable

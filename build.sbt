@@ -47,9 +47,9 @@ javaOptions in  (Test,run) += "-Djavax.net.ssl.trustStorePassword=Sbux1Sbux1"
 javaHome := Some(file("/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home"))
 
 // Assembly settings
-//mainClassStr in Global := Some("com.sbux.quiz.mgmt.Main")
+//mainClassStr in Global := Some("com.sbux.cust.mgmt.Main")
 
-mainClass in Compile := Some("com.sbux.quiz.mgmt.Main")
+mainClass in Compile := Some("com.sbux.cust.mgmt.Main")
 
 jarName in assembly := "akka-http-crud.jar"
 

@@ -1,4 +1,4 @@
-package com.sbux.quiz.mgmt.entities
+package com.sbux.cust.mgmt.entities
 
 /**
   * Created by inbanerj on 11/3/16.
