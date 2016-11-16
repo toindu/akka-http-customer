@@ -7,15 +7,13 @@ version := "1.0.0"
 
 organization := "com.sbux"
 
-scalaVersion := "6.11.8"
+scalaVersion := "2.11.8"
 
-resolvers ++= Seq("Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/",
-  Resolver.bintrayRepo("hseeberger", "maven"))
 
 fork in  (Test,run) := true
 
 libraryDependencies ++= {
-  val AkkaVersion       = "6.4.0"
+  val AkkaVersion       = "2.4.0"
   val AkkaHttpVersion   = "2.4.11"
   val Json4sVersion     = "3.2.11"
   val akkaV       = "2.4.3"
@@ -81,7 +79,6 @@ dockerfile in docker := {
     // Add all files on the classpath
     add(classpath.files, "/app/")
     // Add the trust file
-    add(baseDirectory(_ / "src/main/resources/cassandra.truststore").value, file("/app/cassandra.truststore"))
     // Add the JAR file
     add(jarFile, jarTarget)
     // On launch run Java with the classpath and the main class
