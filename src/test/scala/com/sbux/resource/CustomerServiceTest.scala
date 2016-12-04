@@ -11,7 +11,7 @@ import com.sbux.cust.mgmt.RestInterface
 import com.sbux.cust.mgmt.resources.CustomerResource
 import com.typesafe.config.ConfigFactory
 import org.scalatest.{Matchers, WordSpec}
-
+import akka.http.scaladsl.model.headers._
 import scala.concurrent.Await
 
 
@@ -29,6 +29,8 @@ class CustomerServiceTest extends WordSpec with Matchers with ScalatestRouteTest
 
   implicit val executionContext = system.dispatcher
   //implicit val timeout = Timeout(10)
+
+  val authorization = Authorization(BasicHttpCredentials("admin", "admin"))
 
   "Customers API" should {
     val jsonRequest = ByteString(
@@ -53,6 +55,7 @@ class CustomerServiceTest extends WordSpec with Matchers with ScalatestRouteTest
      val postRequest = HttpRequest(
         HttpMethods.POST,
         uri = "/customers",
+        headers = List(authorization),
         entity = HttpEntity(MediaTypes.`application/json`, jsonRequest))
 
       postRequest ~> routes ~> check {
